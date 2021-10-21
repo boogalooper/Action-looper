@@ -34,7 +34,6 @@ try { event = arguments[1] } catch (e) { }
 main()
 
 function main() {
-
     if (!event) {
         var sel = getSelectedLayersIds(),
             a = AM.getCurrentAction()
@@ -51,8 +50,7 @@ function main() {
 
             if (AM.createDroplet(a.setName, a.atnName, File(Folder.temp + "/" + generateUUID() + ".tmp"))) {
                 doLoop()
-            }
-            // exit script  
+            } 
         }
         else {
             if (sel.length <= 1 || a.atnIndex == 0 || a.atnName == 0) return;
@@ -66,7 +64,6 @@ function main() {
             AM.putScriptSettings(cfg)
             addEvt()
             AM.selectLayerById(cur)
-            // next code  
         }
     } else {
         delEvt()
@@ -113,7 +110,6 @@ function main() {
     return false
 }
 
-
 isCancelled ? 'cancel' : undefined
 
 function getSelectedLayersIds() {
@@ -131,7 +127,6 @@ function getSelectedLayersIds() {
 }
 
 function ActionManager() {
-
     var gProperty = s2t("property"),
         gAction = s2t("action"),
         gActionSet = s2t("actionSet"),
@@ -253,8 +248,6 @@ function ActionManager() {
         catch (e) { }
         return false
     }
-
-
 
     this.getCurrentAction = function () {
         try {
