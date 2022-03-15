@@ -9,7 +9,7 @@
 // BEGIN__HARVEST_EXCEPTION_ZSTRING
 <javascriptresource>
 <name>Action looper</name>
-<category>jazzy</category>
+<category>actions</category>
 <eventid>2a53ac7b-9137-4014-8800-d7072db3d946</eventid>
 <terminology><![CDATA[<< /Version 1
                        /Events <<
